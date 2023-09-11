@@ -1,0 +1,68 @@
+*{
+  margin: 0%;
+  padding: 0;
+
+}
+
+body {
+  background-color: #3e3e3e; /* Cambia este color al que desees */
+}
+
+#Container{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  color: rgb(255, 75, 35);
+  
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #000000; /* Cambia este color al que desees */
+  border: 1px solid #ff5a2c;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(246, 77, 39, 0.821);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px; /* Ajusta la altura según tus preferencias */
+  width: 300px; /* Ajusta el ancho según tus preferencias */
+  color: rgb(255, 75, 35);
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.button-card{
+  color: #ff5a2c;
+  background-color: #3e3e3e;
+}
+/* Estilos para el contenedor principal */
+.courses-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben en una fila */
+  justify-content: space-between; /* Distribuye las tarjetas horizontalmente */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+/* Estilos para la tarjeta */
+.card {
+  /* ... Otros estilos ... */
+  position: relative; /* Hace que la tarjeta sea un elemento de posición relativa */
+}
